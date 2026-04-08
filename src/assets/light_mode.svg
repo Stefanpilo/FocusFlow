@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="title desc">
+  <title id="title">Light mode</title>
+  <desc id="desc">White sun icon with header-gray shadow</desc>
+  <defs>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#3f4160" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <!-- sun center -->
+    <circle cx="128" cy="128" r="44" fill="#FFFFFF"/>
+
+    <!-- rays -->
+    <g transform="translate(128,128)" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round">
+      <g transform="rotate(0)"><line x1="0" y1="-96" x2="0" y2="-66"/></g>
+      <g transform="rotate(45)"><line x1="0" y1="-96" x2="0" y2="-66"/></g>
+      <g transform="rotate(90)"><line x1="0" y1="-96" x2="0" y2="-66"/></g>
+      <g transform="rotate(135)"><line x1="0" y1="-96" x2="0" y2="-66"/></g>
+      <g transform="rotate(180)"><line x1="0" y1="-96" x2="0" y2="-66"/></g>
+      <g transform="rotate(225)"><line x1="0" y1="-96" x2="0" y2="-66"/></g>
+      <g transform="rotate(270)"><line x1="0" y1="-96" x2="0" y2="-66"/></g>
+      <g transform="rotate(315)"><line x1="0" y1="-96" x2="0" y2="-66"/></g>
+    </g>
+  </g>
+
+</svg>

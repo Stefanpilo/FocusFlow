@@ -5,11 +5,11 @@ import TimerCard from '../../components/Home/TimerCard.tsx'
 
 import * as style from './home.css.ts'
 
-function App() {
+function Home({ isDarkModeEnabled, setIsDarkModeEnabled }) {
 
   return (
     <>
-      <Header />
+      <Header isDarkModeEnabled={isDarkModeEnabled} setIsDarkModeEnabled={setIsDarkModeEnabled}/>
       <div style={style.wrappedMid}>
         <TimerCard />
         <SessionStatisticsCard />
@@ -19,4 +19,4 @@ function App() {
   )
 }
 
-export default App
+export default Home
