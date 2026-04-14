@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="title desc">
+  <title id="title">Dark mode</title>
+  <desc id="desc">White crescent moon icon with header-gray shadow</desc>
+  <defs>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#3f4160" flood-opacity="0.35"/>
+    </filter>
+
+    <!-- mask: white visible, black transparent -->
+    <mask id="moonMask" maskUnits="userSpaceOnUse" x="0" y="0" width="256" height="256">
+      <rect width="100%" height="100%" fill="black"/>
+      <!-- center the main circle so the crescent is horizontally balanced -->
+      <circle cx="128" cy="128" r="76" fill="white"/>
+      <!-- move the cutout slightly right to form the crescent -->
+      <circle cx="160" cy="120" r="54" fill="black"/>
+    </mask>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <rect width="100%" height="100%" fill="#FFFFFF" mask="url(#moonMask)"/>
+  </g>
+
+</svg>
