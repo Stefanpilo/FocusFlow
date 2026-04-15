@@ -1,4 +1,8 @@
-export const headerRoot = {
+import type { Properties } from 'csstype';
+
+type cssType = Properties<string | number, string & {}>;
+
+export const headerRoot: cssType = {
     height: "100px",
     padding: "0 6%",
     display: "flex",
@@ -8,7 +12,7 @@ export const headerRoot = {
     background: "linear-gradient(90deg, #3f4160 0%, #5e5e7d 50%, #3f4160 100%)"
 }
 
-export const logoWrapper = {
+export const logoWrapper: cssType = {
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
@@ -16,16 +20,16 @@ export const logoWrapper = {
     gap: "10px"
 }
 
-export const logoImg = {
+export const logoImg: cssType = {
     width: "40px",
     height: "40px"
 }
 
-export const logoName = {
+export const logoName: cssType = {
     color: "white"
 }
 
-export const settingsWrapper = {
+export const settingsWrapper: cssType = {
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
@@ -33,13 +37,13 @@ export const settingsWrapper = {
     gap: "10px"
 }
 
-export const settingsPopupToggle = {
+export const settingsPopupToggle: cssType = {
     width: "40px",
     height: "40px",
     //cursor: "pointer"
 }
 
-export const settingsDarkModeToggle = {
+export const settingsDarkModeToggle: cssType = {
     width: "40px",
     height: "40px",
     cursor: "pointer"
