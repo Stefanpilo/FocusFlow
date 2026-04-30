@@ -8,7 +8,7 @@ import { useAppContext } from "../../AppContext.tsx";
 
 
 function HeaderComponent() {
-  const { isDarkModeEnabled, setIsDarkModeEnabled } = useAppContext();
+  const { isDarkModeEnabled, setAppState } = useAppContext();
 
   return (
     <div style={headerStyle.headerRoot}>
@@ -20,7 +20,7 @@ function HeaderComponent() {
       {/* settings */}
       <div style={headerStyle.settingsWrapper}>
         <img src={settingsIcon} alt="settingsPopupToggle" style={headerStyle.settingsPopupToggle}/>
-        <img src={isDarkModeEnabled ? lightModeIcon : darkModeIcon} alt="darkModeToggle" style={headerStyle.settingsDarkModeToggle} onClick={() => setIsDarkModeEnabled(!isDarkModeEnabled)}/>
+        <img src={isDarkModeEnabled ? lightModeIcon : darkModeIcon} alt="darkModeToggle" style={headerStyle.settingsDarkModeToggle} onClick={() => setAppState(prev => ({ ...prev, isDarkModeEnabled: !prev.isDarkModeEnabled }))}/>
       </div>
     </div>
   )
